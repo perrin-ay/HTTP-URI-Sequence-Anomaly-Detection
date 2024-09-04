@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Transformer Encoder Classifier.ipynb
+"""Transformer Encoder Classifier
 """
 
 import datasets
