@@ -2,9 +2,6 @@
 """Domain adaption on HTTP URI dataset
 """
 
-!pip install transformers
-!pip install datasets
-
 import datasets
 from datasets import load_dataset,Value, Sequence, Features
 from datasets import Dataset
