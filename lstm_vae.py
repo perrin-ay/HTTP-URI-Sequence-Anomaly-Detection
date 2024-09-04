@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-"""LSTM VAE
-
-"""
+"""LSTM VAE"""
 
 import datasets
 from datasets import load_dataset,Value, Sequence, Features
