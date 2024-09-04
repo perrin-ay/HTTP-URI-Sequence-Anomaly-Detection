@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Domain adaption on HTTP URI dataset.ipynb
-
-Author: Arnab Chatterjee
-
+"""Domain adaption on HTTP URI dataset
 """
 
 !pip install transformers
