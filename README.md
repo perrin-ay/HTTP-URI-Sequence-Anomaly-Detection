@@ -84,3 +84,20 @@ Epoch 4 averaged batch training accuracy is 99.600686 and loss is 0.017547
 Epoch 4 averaged Test accuracy is 99.645558 and loss is 0.015387
 Time ( in secs) elapsed since start of training :  3810.2276995182037
 ```
+#### Train LSTM VAE
+
+- Use legitimate http sequence dataset for training. See notebook here : https://github.com/perrin-ay/HTTP-URI-Sequence-Anomaly-Detection/blob/main/Legitimate_and_anomalous_HTTP_request_sequence_dataset.ipynb
+- dataset can be found here: https://huggingface.co/datasets/bridge4/URI_API_SEQ_GOOD_withEmbeddings_Dataset
+
+![image](https://github.com/user-attachments/assets/cdb7da80-eb7d-43a1-b989-40ac30050d25)
+
+- Training details : https://github.com/perrin-ay/HTTP-URI-Sequence-Anomaly-Detection/blob/main/lstm_vae.py
+
+**Inference and Results**
+
+- Inference saved in dataset : https://huggingface.co/datasets/bridge4/LSTM-VAE-INFERENCE_Dataset
+  
+![image](https://github.com/user-attachments/assets/5eaeb492-ec7f-4808-91da-1e615e1c9bef)
+
+
+
