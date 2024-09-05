@@ -4,8 +4,48 @@
 
 ## Motivation
 
+To provide HTTP request sequence analytics and attack/abuse detection
+
+- Here a HTTP request sequence is any time-ordered sequence of URI calls while browsing a website or interacting with an API.
+- For example below is one instance of legitimate and illegitimate sequence of HTTP calls looks the Alteon REST API
+
+**Legitimate**
+```
+1) /reporter/system
+2) /reporter/virtualServer
+3) /
+4) /webui/default.html
+5) /
+5) /webui/default.html
+6) /
+7) /webui/default.html
+8) /
+9) /webui/default.html
+```
+**Offending**
+```
+1) /reporter/network
+2) /reporter/system
+3) /reporter/system
+4) /reporter/virtualServer
+5) /reporter/system
+6) /config/hwDRAMSize
+7) /
+9) /reporter/network
+10) /reporter/system 
+```
+
+- When attackers or malicious bots attempt to access websites or API's with offending requests they rarely follow expected patterened sequence of requests appropriate for the resource being accessed.
+
+## Objective
+
+- Learn http request sequences and provide a sequence analytics - a view into what legitimate sequences look like for a particular resource being accessed.
+- Identify and detect offending and malicious sequences in an effort to then apply mitigation strategies.
+ 
 
 ## Hierarchical design
+
+- Transformer and LSTM VAE networks are used for learning and detecting legitimate and malicious sequences of HTTP request URI's  
 
 #### Domain adaptation of distilBERT to create a HTTP2vec model
 
