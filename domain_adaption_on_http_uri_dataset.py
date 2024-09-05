@@ -43,7 +43,7 @@ dfuri_ds = Dataset.from_pandas(dfuri)
 print (dfuri_ds)
 print (dfuri_ds[1])
 
-"""- Using distilbert (trained transformer encoder model)  as embeddings model
+"""- Using distilbert as embeddings model
 - Load distilbert and its tokenizer
 """
 
