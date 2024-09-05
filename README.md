@@ -1,4 +1,4 @@
-# Sequence-Anomaly-Detection-in-HTTP-URIs
+# HTTP-URI-Sequence-Anomaly-Detection
 
 ---
 
@@ -7,7 +7,7 @@
 To provide HTTP request sequence analytics and attack/abuse detection
 
 - Here a HTTP request sequence is any time-ordered sequence of URI calls while browsing a website or interacting with an API.
-- For example below is one instance of legitimate and illegitimate sequence of HTTP calls looks the Alteon REST API
+- For example below is one instance of legitimate and illegitimate sequence of HTTP calls to Alteon REST API
 
 **Legitimate**
 ```
